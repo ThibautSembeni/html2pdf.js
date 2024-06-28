@@ -61,7 +61,7 @@ Worker.prototype.from = function from(src, type) {
   function getType(src) {
     switch (objType(src)) {
       case 'string':  return 'string';
-      case 'element': return src.nodeName.toLowerCase === 'canvas' ? 'canvas' : 'element';
+      case 'element': return src.nodeName.toLowerCase() === 'canvas' ? 'canvas' : 'element';
       default:        return 'unknown';
     }
   }
