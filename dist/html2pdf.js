@@ -1,6 +1,6 @@
 /*!
- * html2pdf.js v0.10.1
- * Copyright (c) 2021 Erik Koopmans
+ * html2pdf.js v0.10.3
+ * Copyright (c) 2024 Erik Koopmans
  * Released under the MIT License.
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -656,7 +656,7 @@ Worker.prototype.from = function from(src, type) {
         return 'string';
 
       case 'element':
-        return src.nodeName.toLowerCase === 'canvas' ? 'canvas' : 'element';
+        return src.nodeName.toLowerCase() === 'canvas' ? 'canvas' : 'element';
 
       default:
         return 'unknown';
